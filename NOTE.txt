@@ -1,0 +1,13 @@
+CRUD CI 4
+-Rename env jadi .env
+-Ubah # CI_ENVIRONMENT = production jadi CI_ENVIRONMENT = development.. untuk debug biar bisa lihat error
+-buat database di phpmyadmin
+-hubungkan dengan db di dalam .env dibagian database
+-buat table php spark migrate:create product jika error tambah C:\xampp\php ke advance system setting > environment variable > pilih path > edit > new lalu ok.. tutup dan buka lagi trminal atau vs code
+-kalo masih error juga buka xampp control panel di php.ini uncoment extension=intl.. save.. restart
+-isi table di dalam file di app > database > migrations > di bagian up
+-kalau sudah php spark migrate.. otomatis bakal ada tablenya di db
+-ngoding dah
+-jalanin php spark serve
+-jangan lupa di app > App.php.. di sesuaikan public $baseURL = 'http://localhost:8081/';
+-ganti default page di Routes.php ganti Home sama controller yang di bikin
